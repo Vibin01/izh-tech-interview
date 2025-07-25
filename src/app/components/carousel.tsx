@@ -8,7 +8,7 @@ const Carousel = () => {
 
   const testimonials = [
     {
-      src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop&crop=face",
+      src: "/image-1.jpeg",
       alt: "Customer testimonial 1",
       name: "Ashley Right",
       role: "UX Designer",
@@ -16,7 +16,7 @@ const Carousel = () => {
         "Professionals in their craft! All products were super amazing with strong attention to details, comps and overall vibe",
     },
     {
-      src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=600&fit=crop&crop=face",
+      src: "image-2.jpeg",
       alt: "Customer testimonial 2",
       name: "Michael Torres",
       role: "Product Designer",
@@ -24,7 +24,7 @@ const Carousel = () => {
         "Outstanding work quality and attention to detail. The team delivered exactly what we needed and more.",
     },
     {
-      src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=600&fit=crop&crop=face",
+      src: "image-3.jpeg",
       alt: "Customer testimonial 3",
       name: "David Kim",
       role: "Data Scientist",
@@ -32,7 +32,7 @@ const Carousel = () => {
         "Incredible experience working with this team. They understood our vision perfectly and executed flawlessly.",
     },
     {
-      src: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=600&fit=crop&crop=face",
+      src: "image-4.jpeg",
       alt: "Customer testimonial 4",
       name: "Jacob Jose",
       role: "Marketing Lead",
@@ -40,7 +40,7 @@ const Carousel = () => {
         "The level of professionalism and creativity exceeded our expectations. Highly recommend their services.",
     },
     {
-      src: "https://images.unsplash.com/photo-1494790108755-2616c9479882?w=400&h=600&fit=crop&crop=face",
+      src: "image-5.jpeg",
       alt: "Customer testimonial 5",
       name: "Alex Rivera",
       role: "UX Researcher",
@@ -105,7 +105,7 @@ const Carousel = () => {
                       initial={{ scale: 0, x: -150, y: 100 }}
                       animate={{ scale: 1, x: 0, y: 0 }}
                       transition={{ duration: 0.6 }}
-                      className="object-cover w-24 h-32 md:w-40 md:h-52 lg:w-46 lg:h-96"
+                      className="object-cover w-24 h-32 md:w-40 md:h-52 lg:w-46 lg:h-[450px]"
                     />
                   ) : (
                     <img
@@ -117,7 +117,7 @@ const Carousel = () => {
                   {!isActive && (
                     <div className="absolute -bottom-12 mt-2 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <div className="relative h-1 md:w-28 mx-auto overflow-hidden mt-1 mb-1">
-                        <div className="h-full bg-red-500 rounded-full origin-center scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
+                        <div className="h-full bg-red-300 rounded-full origin-center scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
                       </div>
 
                       <div className="text-left text-sm font-semibold text-gray-800">
